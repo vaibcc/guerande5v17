@@ -44,7 +44,7 @@ export default function About() {
           >
             <div className="relative overflow-hidden rounded-2xl border border-white/8 shadow-2xl shadow-black/50">
               <img
-                src="https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/025d3454d_c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg"
+                src="c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg"
                 alt="L'équipe Guérande 5 autour d'une table de billard"
                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
               />
