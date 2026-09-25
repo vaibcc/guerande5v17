@@ -18,7 +18,7 @@ export default function Federation() {
           {/* Logo FFB */}
 <div className="shrink-0">
   <div className="relative rounded-2xl overflow-hidden bg-white p-3 shadow-lg">
-    <img
+    <img>
       src="/logo-FFB.png"
       alt="Logo Fé
             </div>
