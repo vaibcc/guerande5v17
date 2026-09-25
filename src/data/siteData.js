@@ -1,0 +1,182 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+// ============================================================
+//  GUÉRANDE 5 — DONNÉES DU SITE (édition centralisée)
+//  Modifiez ce fichier pour mettre à jour le contenu du site.
+//  Les champs non confirmés utilisent "Informations à venir".
+// ============================================================
+
+export const teamInfo = {
+  name: "Guérande 5",
+  club: "Billard Presqu'île Guérande",
+  federation: "Fédération Française de Billard",
+  federationShort: "FFB",
+  location: "Guérande, Loire-Atlantique",
+  type: "Équipe départementale de billard",
+  tagline: "Passion, compétition et esprit d'équipe au cœur de la Presqu'île guérandaise.",
+};
+
+// --- Statistiques rapides (uniquement les infos confirmées) ---
+export const quickStats = [
+  { value: "7", label: "Joueurs présentés" },
+  { value: "FFB", label: "Fédération Française de Billard" },
+  { value: "Guérande", label: "Presqu'île guérandaise" },
+];
+
+// --- Joueurs confirmés ---
+// Pour ajouter une photo : remplacer "placeholder" par l'URL de la photo.
+export const players = [
+  {
+    id: "vaibhav-kamra",
+    name: "Vaibhav KAMRA",
+    role: "Capitaine",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/2a7091bfc_66666.jpg",
+    bio: "Capitaine de Guérande 5, il pilote l'équipe depuis 2025. Il met sa maîtrise technique et son sens de la stratégie au service du collectif.",
+    stats: "Informations à venir",
+  },
+  {
+    id: "belen-lopez-samaniego",
+    name: "Belén López Samaniego",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/f3fc935d6_belenlopez.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+  {
+    id: "noemie-chapelais",
+    name: "Noémie Chapelais",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/64b72ab99_noemie.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+  {
+    id: "arthur-rubin",
+    name: "Arthur Rubin",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/738699bd7_authur.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+  {
+    id: "sebastien-gautier",
+    name: "Sebastien GAUTIER",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/8768607cf_sebastian.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+  {
+    id: "tiphaine-legros",
+    name: "Tiphaine Legros",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/cf3f5f682_tiphaine.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+  {
+    id: "louise-dorigny",
+    name: "Louise Dorigny",
+    role: "Joueur",
+    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/035ce54db_louise.png",
+    bio: "Présentation à venir",
+    stats: "Informations à venir",
+  },
+];
+
+// --- Résultats récents confirmés ---
+// result: "VICTOIRE" | "DÉFAITE" | "NUL"
+export const results = [
+  {
+    id: "m1",
+    teamA: "Guérande 4",
+    scoreA: 9,
+    teamB: "Guérande 5",
+    scoreB: 7,
+    result: "DÉFAITE",
+    description: "Un match disputé face à Guérande 4, qui s'impose sur le score de 9 à 7.",
+    date: "Informations à venir",
+    venue: "Informations à venir",
+  },
+  {
+    id: "m2",
+    teamA: "Guérande 5",
+    scoreA: 12,
+    teamB: "Guérande 6",
+    scoreB: 4,
+    result: "VICTOIRE",
+    description: "Une belle performance collective de Guérande 5, avec une victoire 12 à 4 face à Guérande 6.",
+    date: "Informations à venir",
+    venue: "Informations à venir",
+  },
+];
+
+// --- Classement (non fourni) ---
+export const ranking = {
+  available: false,
+  division: "Informations à venir",
+  position: "Informations à venir",
+  points: "Informations à venir",
+  played: "Informations à venir",
+};
+
+// --- Prochains matchs (non fournis) ---
+// Pour ajouter un match : ajouter un objet { date, time, opponent, homeAway, venue, competition }
+export const upcomingMatches = [];
+
+// --- Galerie ---
+// category: "Matchs" | "Entraînements" | "Équipe" | "Événements" | "Vie du club"
+export const galleryCategories = [
+  "Matchs",
+  "Entraînements",
+  "Équipe",
+  "Événements",
+  "Vie du club",
+];
+
+export const galleryImages = [
+  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/967c2d6be_galarie2.jpeg", category: "Matchs", alt: "Joueur en action sur le tapis bleu" },
+  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/917d22b28_galarie3.jpeg", category: "Matchs", alt: "Joueur en pleine concentration sur le tapis vert" },
+  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/fc4b43ad5_galarie4.jpeg", category: "Matchs", alt: "Action de match en compétition" },
+];
+
+// --- Images du site ---
+export const images = {
+  hero: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/33f27252b_generated_b0149cd0.jpg",
+  about: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/8e230bbaa_generated_1c4a5720.jpg",
+  teamSpirit: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/9c2dc148d_generated_595e9651.jpg",
+  club: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/e67d09b8f_generated_da09737f.jpg",
+};
+
+// --- Contact (non fourni) ---
+export const contact = {
+  email: "Informations à venir",
+  phone: "Informations à venir",
+  address: "Informations à venir",
+  facebook: "Informations à venir",
+  instagram: "Informations à venir",
+  other: "Informations à venir",
+};
+
+// --- Club ---
+export const clubInfo = {
+  name: "Billard Presqu'île Guérande",
+  description:
+    "Guérande 5 évolue au sein du Billard Presqu'île Guérande, club de billard situé à Guérande et engagé dans la pratique et la compétition.",
+  address: "Informations à venir",
+  website: "Informations à venir",
+  facebook: "Informations à venir",
+  instagram: "Informations à venir",
+};
+
+// --- Navigation ---
+export const navLinks = [
+  { label: "Accueil", href: "#accueil" },
+  { label: "L'équipe", href: "#equipe" },
+  { label: "Résultats", href: "#resultats" },
+  { label: "Calendrier", href: "#calendrier" },
+  { label: "Classement", href: "#classement" },
+  { label: "Le club", href: "#club" },
+  { label: "Galerie", href: "#galerie" },
+  { label: "Contact", href: "#contact" },
+];
