@@ -20,9 +20,9 @@ export default function About() {
 
             <p className="mt-6 text-base md:text-lg text-white/65 leading-relaxed">
               Guérande 5 est une équipe départementale du Billard Presqu'île
-              Guérande. Réunie autour de la passion du billard et de la compétition,
-              l'équipe met en avant la concentration, la stratégie, la régularité
-              et surtout l'esprit collectif.
+              Guérande. Réunie autour de la passion du billard et de la
+              compétition, l'équipe met en avant la concentration, la stratégie,
+              la régularité et surtout l'esprit collectif.
             </p>
           </motion.div>
 
@@ -34,8 +34,7 @@ export default function About() {
             className="relative"
           >
             <div className="relative overflow-hidden rounded-2xl border border-white/8 shadow-2xl shadow-black/50">
-              <img
-                src="/967644cb94c.jpeg
+              <c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0D]/50 to-transparent" />
             </div>
@@ -47,3 +46,4 @@ export default function About() {
     </section>
   );
 }
+``
