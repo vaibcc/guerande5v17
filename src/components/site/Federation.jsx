@@ -14,7 +14,7 @@ export default function Federation() {
         >
           <div className="shrink-0">
             <div className="relative rounded-2xl overflow-hidden bg-white p-3 shadow-lg">
-              <imgo-FFB.png
+              /logo-FFB.png
             </div>
           </div>
 
