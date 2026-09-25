@@ -30,7 +30,7 @@ export const players = [
     id: "vaibhav-kamra",
     name: "Vaibhav KAMRA",
     role: "Capitaine",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/2a7091bfc_66666.jpg",
+    photo: "/66666.jpg",
     bio: "Capitaine de Guérande 5, il pilote l'équipe depuis 2025. Il met sa maîtrise technique et son sens de la stratégie au service du collectif.",
     stats: "Informations à venir",
   },
@@ -38,7 +38,7 @@ export const players = [
     id: "belen-lopez-samaniego",
     name: "Belén López Samaniego",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/f3fc935d6_belenlopez.png",
+    photo: "/belen lopez.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
@@ -46,7 +46,7 @@ export const players = [
     id: "noemie-chapelais",
     name: "Noémie Chapelais",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/64b72ab99_noemie.png",
+    photo: "/noemie.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
@@ -54,7 +54,7 @@ export const players = [
     id: "arthur-rubin",
     name: "Arthur Rubin",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/738699bd7_authur.png",
+    photo: "/authur.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
@@ -62,7 +62,7 @@ export const players = [
     id: "sebastien-gautier",
     name: "Sebastien GAUTIER",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/8768607cf_sebastian.png",
+    photo: "/sebastian.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
@@ -70,7 +70,7 @@ export const players = [
     id: "tiphaine-legros",
     name: "Tiphaine Legros",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/cf3f5f682_tiphaine.png",
+    photo: "/tiphaine.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
@@ -78,12 +78,12 @@ export const players = [
     id: "louise-dorigny",
     name: "Louise Dorigny",
     role: "Joueur",
-    photo: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/035ce54db_louise.png",
+    photo: "/louise.png",
     bio: "Présentation à venir",
     stats: "Informations à venir",
   },
 ];
-
+`
 // --- Résultats récents confirmés ---
 // result: "VICTOIRE" | "DÉFAITE" | "NUL"
 export const results = [
@@ -135,17 +135,29 @@ export const galleryCategories = [
 ];
 
 export const galleryImages = [
-  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/967c2d6be_galarie2.jpeg", category: "Matchs", alt: "Joueur en action sur le tapis bleu" },
-  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/917d22b28_galarie3.jpeg", category: "Matchs", alt: "Joueur en pleine concentration sur le tapis vert" },
-  { src: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/fc4b43ad5_galarie4.jpeg", category: "Matchs", alt: "Action de match en compétition" },
+  {
+    src: "/galarie2.jpeg",
+    category: "Matchs",
+    alt: "Joueur en action sur le tapis bleu",
+  },
+  {
+    src: "/galarie3.jpeg",
+    category: "Matchs",
+    alt: "Joueur en pleine concentration sur le tapis vert",
+  },
+  {
+    src: "/galarie4.jpeg",
+    category: "Matchs",
+    alt: "Action de match en compétition",
+  },
 ];
 
 // --- Images du site ---
 export const images = {
-  hero: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/33f27252b_generated_b0149cd0.jpg",
-  about: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/8e230bbaa_generated_1c4a5720.jpg",
-  teamSpirit: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/9c2dc148d_generated_595e9651.jpg",
-  club: "https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/e67d09b8f_generated_da09737f.jpg",
+  hero: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
+  about: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
+  teamSpirit: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
+  club: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
 };
 
 // --- Contact (non fourni) ---
