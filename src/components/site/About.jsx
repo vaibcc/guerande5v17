@@ -24,12 +24,6 @@ export default function About() {
               compétition, l'équipe met en avant la concentration, la stratégie,
               la régularité et surtout l'esprit collectif.
             </p>
-
-            <div className="mt-8">
-              #equipe
-                Découvrir l'équipe
-              </a>
-            </div>
           </motion.div>
 
           <motion.div
@@ -40,8 +34,15 @@ export default function About() {
             className="relative"
           >
             <div className="relative overflow-hidden rounded-2xl border border-white/8 shadow-2xl shadow-black/50">
-              /c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0D]/50 to-transparent" />
+              <img
+                src="/c7c349a4-2cb6-485d-8fdd-76967644cb94className="absolute inset-0 bg-gradient-to-t from-[#0A0F0D]/50 to-transparent" />
             </div>
 
-            <div className="absolute -bottom-4 -left-4 h-24 w-24 rounded-full bg-
+            <div className="absolute -bottom-4 -left-4 h-24 w-24 rounded-full bg-emerald-500/10 blur-2xl" />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
+``
