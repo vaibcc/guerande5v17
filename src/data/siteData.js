@@ -1,9 +1,31 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+const db = globalThis.__B44_DB__ || {
+  auth: {
+    isAuthenticated: async () => false,
+    me: async () => null,
+  },
+  entities: new Proxy(
+    {},
+    {
+      get: () => ({
+        filter: async () => [],
+        get: async () => null,
+        create: async () => ({}),
+        update: async () => ({}),
+        delete: async () => ({}),
+      }),
+    }
+  ),
+  integrations: {
+    Core: {
+      UploadFile: async () => ({
+        file_url: "",
+      }),
+    },
+  },
+};
 
 // ============================================================
-//  GUÉRANDE 5 — DONNÉES DU SITE (édition centralisée)
-//  Modifiez ce fichier pour mettre à jour le contenu du site.
-//  Les champs non confirmés utilisent "Informations à venir".
+// GUÉRANDE 5 — DONNÉES DU SITE
 // ============================================================
 
 export const teamInfo = {
@@ -13,18 +35,16 @@ export const teamInfo = {
   federationShort: "FFB",
   location: "Guérande, Loire-Atlantique",
   type: "Équipe départementale de billard",
-  tagline: "Passion, compétition et esprit d'équipe au cœur de la Presqu'île guérandaise.",
+  tagline:
+    "Passion, compétition et esprit d'équipe au cœur de la Presqu'île guérandaise.",
 };
 
-// --- Statistiques rapides (uniquement les infos confirmées) ---
 export const quickStats = [
   { value: "7", label: "Joueurs présentés" },
   { value: "FFB", label: "Fédération Française de Billard" },
   { value: "Guérande", label: "Presqu'île guérandaise" },
 ];
 
-// --- Joueurs confirmés ---
-// Pour ajouter une photo : remplacer "placeholder" par l'URL de la photo.
 export const players = [
   {
     id: "vaibhav-kamra",
@@ -83,9 +103,7 @@ export const players = [
     stats: "Informations à venir",
   },
 ];
-`
-// --- Résultats récents confirmés ---
-// result: "VICTOIRE" | "DÉFAITE" | "NUL"
+
 export const results = [
   {
     id: "m1",
@@ -94,7 +112,8 @@ export const results = [
     teamB: "Guérande 5",
     scoreB: 7,
     result: "DÉFAITE",
-    description: "Un match disputé face à Guérande 4, qui s'impose sur le score de 9 à 7.",
+    description:
+      "Un match disputé face à Guérande 4, qui s'impose sur le score de 9 à 7.",
     date: "Informations à venir",
     venue: "Informations à venir",
   },
@@ -105,13 +124,13 @@ export const results = [
     teamB: "Guérande 6",
     scoreB: 4,
     result: "VICTOIRE",
-    description: "Une belle performance collective de Guérande 5, avec une victoire 12 à 4 face à Guérande 6.",
+    description:
+      "Une belle performance collective de Guérande 5, avec une victoire 12 à 4 face à Guérande 6.",
     date: "Informations à venir",
     venue: "Informations à venir",
   },
 ];
 
-// --- Classement (non fourni) ---
 export const ranking = {
   available: false,
   division: "Informations à venir",
@@ -120,12 +139,8 @@ export const ranking = {
   played: "Informations à venir",
 };
 
-// --- Prochains matchs (non fournis) ---
-// Pour ajouter un match : ajouter un objet { date, time, opponent, homeAway, venue, competition }
 export const upcomingMatches = [];
 
-// --- Galerie ---
-// category: "Matchs" | "Entraînements" | "Équipe" | "Événements" | "Vie du club"
 export const galleryCategories = [
   "Matchs",
   "Entraînements",
@@ -152,7 +167,6 @@ export const galleryImages = [
   },
 ];
 
-// --- Images du site ---
 export const images = {
   hero: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
   about: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
@@ -160,7 +174,6 @@ export const images = {
   club: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
 };
 
-// --- Contact (non fourni) ---
 export const contact = {
   email: "Informations à venir",
   phone: "Informations à venir",
@@ -170,7 +183,6 @@ export const contact = {
   other: "Informations à venir",
 };
 
-// --- Club ---
 export const clubInfo = {
   name: "Billard Presqu'île Guérande",
   description:
@@ -181,7 +193,6 @@ export const clubInfo = {
   instagram: "Informations à venir",
 };
 
-// --- Navigation ---
 export const navLinks = [
   { label: "Accueil", href: "#accueil" },
   { label: "L'équipe", href: "#equipe" },
