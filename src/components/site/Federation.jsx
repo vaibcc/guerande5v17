@@ -19,7 +19,7 @@ export default function Federation() {
           <div className="shrink-0">
             <div className="relative rounded-2xl overflow-hidden bg-white p-3 shadow-lg">
               <img
-                src="https://media.db.com/images/public/6ab3cb9eb23892c87b72dcb3/e39b7b016_logo-FFB.png"
+                src=/logo-FFB.png"
                 alt="Logo Fédération Française de Billard"
                 className="h-28 w-auto object-contain"
               />
