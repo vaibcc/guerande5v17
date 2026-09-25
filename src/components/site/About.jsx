@@ -26,20 +26,22 @@ export default function About() {
             </p>
 
             <div className="mt-8">
-              <a
-                href="#equipe"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-7 py-3.5 text-sm font-semibold text-[#0A0F0D] shadow-lg shadow-emerald-900/30 transition-all duration-300 hover:nce: true, margin: "-80px" }}
+              #equipe
+                Découvrir l'équipe
+              </a>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
             className="relative"
           >
             <div className="relative overflow-hidden rounded-2xl border border-white/8 shadow-2xl shadow-black/50">
-              <img
-                src="/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg"
-                alt="L'équipe Guérande 5 autour d'une table de billard"
-                className="aspect-[4/3] w-full object-cover -bottom-4 -left-4 h-24 w-24 rounded-full bg-emerald-500/10 blur-2xl" />
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-}
+              /c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0D]/50 to-transparent" />
+            </div>
+
+            <div className="absolute -bottom-4 -left-4 h-24 w-24 rounded-full bg-
