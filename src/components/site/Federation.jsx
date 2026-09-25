@@ -15,9 +15,10 @@ export default function Federation() {
           <div className="shrink-0">
             <div className="relative rounded-2xl overflow-hidden bg-white p-3 shadow-lg">
               <img
-                src="/logo-FFB.png"
-                alt="Logo Fédération Française de Billard"
-            e="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-400 mb-3">
+                src="/logo-FFB.png    </div>
+
+          <div className="flex-1">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-400 mb-3">
               <span className="h-px w-8 bg-amber-400/60" />
               Affiliation officielle
             </span>
