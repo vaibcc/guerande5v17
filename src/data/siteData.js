@@ -214,7 +214,7 @@ export const navLinks = [
   { label: "Résultats", href: "#resultats" },
   { label: "Calendrier", href: "#calendrier" },
   { label: "Classement", href: "#classement" },
-  { label: "Le club", href: "#club" },
+  { label: "Le club", href: "https://billard-presquile-guerande.fr/" },
   { label: "Galerie", href: "#galerie" },
   { label: "Contact", href: "#contact" },
 ];
