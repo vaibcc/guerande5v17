@@ -150,21 +150,36 @@ export const galleryCategories = [
 ];
 
 export const galleryImages = [
-  {
-    src: "/galarie2.jpeg",
-    category: "Matchs",
-    alt: "Joueur en action sur le tapis bleu",
-  },
-  {
-    src: "/galarie3.jpeg",
-    category: "Matchs",
-    alt: "Joueur en pleine concentration sur le tapis vert",
-  },
-  {
-    src: "/galarie4.jpeg",
-    category: "Matchs",
-    alt: "Action de match en compétition",
-  },
+{
+src: "/13.jpeg",
+category: "Équipe",
+alt: "Photo équipe Guérande 5",
+},
+{
+src: "/galarie3.jpeg",
+category: "Matchs",
+alt: "Joueur en pleine concentration sur le tapis vert",
+},
+{
+src: "/14.jpeg",
+category: "Équipe",
+alt: "Photo équipe Guérande 5",
+},
+{
+src: "/galarie2.jpeg",
+category: "Matchs",
+alt: "Joueur en action sur le tapis bleu",
+},
+{
+src: "/12.jpeg",
+category: "Équipe",
+alt: "Photo équipe Guérande 5",
+},
+{
+src: "/galarie4.jpeg",
+category: "Matchs",
+alt: "Action de match en compétition",
+},
 ];
 
 export const images = {
