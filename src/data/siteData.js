@@ -129,6 +129,18 @@ export const results = [
     date: "Informations à venir",
     venue: "Informations à venir",
   },
+  {
+  id: "m3",
+  teamA: "Guérande 3",
+  scoreA: 13,
+  teamB: "Guérande 5",
+  scoreB: 3,
+  result: "DÉFAITE",
+  description:
+    "Face à une équipe de Guérande 3 très solide, Guérande 5 s'incline sur le score de 13 à 3. Malgré l'écart au tableau d'affichage, l'équipe a fait preuve de combativité et de solidarité tout au long de la rencontre, en défendant ses chances jusqu'au bout.",
+  date: "Informations à venir",
+  venue: "Informations à venir",
+},
 ];
 
 export const ranking = {
