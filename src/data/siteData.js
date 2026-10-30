@@ -192,8 +192,28 @@ src: "/galarie4.jpeg",
 category: "Matchs",
 alt: "Action de match en compétition",
 },
-];
 
+{
+src: "/44.jpg",
+category: "Matchs",
+alt: "Match contre Guérande 3",
+},
+{
+src: "/55.jpg",
+category: "Matchs",
+alt: "Rencontre Guérande 5 contre Guérande 3",
+},
+{
+src: "/66.jpg",
+category: "Équipe",
+alt: "Équipe Guérande 5",
+},
+{
+src: "/77.jpg",
+category: "Équipe",
+alt: "Joueurs de Guérande 5",
+},
+];
 export const images = {
   hero: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
   about: "/c7c349a4-2cb6-485d-8fdd-76967644cb94c.jpeg",
